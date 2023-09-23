@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-10">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>PERSONAL PORTFOLIO WEBSITE</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #030d18;
+            
+        }
+        
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 85%;
+            padding: 2rem 10%;
+            display: flex;
+            background-color: #030d18;
+            background-origin: padding-box;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            text-decoration: none;
+            font-size: 2.5rem;
+            color: aqua;
+            font-weight: 650;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            font-size: 1.7;
+            color: white;
+            margin-left: 4rem;
+            transition: 0.4s;
+            
+        }
+
+        .navbar a:hover {
+            color: aqua;
+        }
+
+        section {
+            scroll-behavior: smooth;
+            display: flex;
+            margin: 75px;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+        }
+
+        .left1{
+            margin-top:120px;
+            font-size: 1.9rem;
+            width: 300px;
+            height: 300px;
+        }
+        .left1.string{
+            color: aqua;
+        }
+
+        .right1{
+           margin-top: 120px;
+            font-size: 1.5rem;
+            width: 450px;
+            height: 450px;
+        }
+        .right1 img{
+            width: 450px;
+            height: 450px;
+        }
+        #element{
+            color: aqua;
+        }
+        
+        .about .about{
+            color: aqua;
+            align-items: start;
+        }
+
+        .projects .projects_1{
+            
+            color: aqua;
+            align-items: start;
+        }
+        
+        .contact{
+            color: aqua;
+        }
+        
+        .contact a{
+            text-decoration: none;
+            color: white;
+        }
+        
+
+    </style>
+    
+    <header class="header">
+        <a href="#" class="logo">Portfolio</nav>
+        <nav class="navbar">
+                <a href="#home">Home</a>>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact Me</a>
+                
+        </nav>
+        </header>
+
+    <section class="home" id="home">
+          <div class = "left1">
+                Hi! everyone 
+                <h3 style="color: aqua;">I am Aditya</h3> and I am a passionate...
+                <span id="element"></span>
+            </div>
+        
+            <div class = "right1">
+                <img src="devops.png">
+            </div>
+        
+        </section>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Android Developer,', 'Graphic Designer'],
+          typeSpeed: 80,
+        });
+      </script>
+      <hr>
+      <section class="about" id="about">
+        <div class="about-content">
+            <div class="about"><h2>About Me</h2></div>
+            <hr>
+            <h3><u>Education :</u></h3>
+            <h4>
+                <ul>
+                    <li>Btech CSE from Bharati Vidyapeeth College of Engineering (GGSIPU) New Delhi.</li>
+                    <li>School: Govt. Co-ed Sr. Sec. School.</li>
+                </ul>
+            </h4>
+            <br>
+            <h3><u>Hobbies & Interest :</u></h3>
+            <h4>
+                As a hobby I like to play Cricket and Code and my Interests include watching tank animation cartoon on Youtube in my free time.
+            </h4>
+            <br>
+            <h3><u>Skills :</u></h3>
+            <h4>
+               <ul>
+                <li>Tech Skills: C, C++, JAVA, PYTHON, HTML, CSS, JAVASCRIPT.</li>
+                <li>Non-Tech Skills: Graphic Designing, Photo Editing, Poster Making.</li>
+               </ul>
+            </h4>
+            
+        </div>
+      </section>
+      <hr>
+      <section class="projects" id="projects">
+        <div class="projects2">
+        <div class="projects_1">
+            <h2>My Projects</h2>
+        </div>
+
+        <hr>
+
+        <h3><u>Web Development :</u></h3>
+        <h4>
+            <ul>
+                <li>Portfolio Website</li>
+            </ul>
+        </h4>
+        <h3><u>Android Development :</u></h3>
+        <h4>
+            <ul>
+                <li>BMI App</li>
+            </ul>
+        </h4>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="contact" id="contact">
+      <div class="contact1">
+        <div class="contact2">
+            <h2>Contact Us</h2>
+        </div>
+            <hr>
+           <i class="fa fa-envelope" style="font-size:24px;color:white">
+            sadityak2003@gmail.com
+        </i>
+        <br>
+        <i class="fa fa-linkedin-square" style="font-size:28px;color:white">
+            <a href="http://www.linkedin.com/in/aditya-a2003ks">linkedin</a>
+        </i>
+         <br>
+         <i class="fa fa-instagram" style="font-size:28px;color:white">
+            <a href="http://www.instagram.com/sadityak2003/">instagram</a>
+        </i>
+        <br>
+         <i class="fa fa-github" style="font-size:28px;color:white">
+            <a href="http://www.github.com/sadityak2003/">github</a>
+        </i>
+      </div>
+      </section>
+</body>
+
+</html>
